@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f1b0a57558ea4e3e9cc37209f2245535" Name="Diagram1">
+        <EntityTypeShape EntityType="ПодготовкаModel.products" Width="2.375" PointX="6.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ПодготовкаModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ПодготовкаModel.users" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="ПодготовкаModel.vending_machines" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <AssociationConnector Association="ПодготовкаModel.FK_vending_machines_users" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ПодготовкаModel.dbomaintenance" Width="1.5" PointX="5.25" PointY="8" />
+        <EntityTypeShape EntityType="ПодготовкаModel.sale" Width="1.5" PointX="9.375" PointY="1.25" />
+        <AssociationConnector Association="ПодготовкаModel.FK_dbomaintenance_vending_machines" />
+        <AssociationConnector Association="ПодготовкаModel.FK_products_vending_machines" />
+        <AssociationConnector Association="ПодготовкаModel.FK_sales_products" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,29 @@
+﻿<Page x:Class="подготовка.dropDownPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:подготовка"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="dropDownPage">
+
+    <Grid>
+        
+        
+        
+        <Grid VerticalAlignment="Top" HorizontalAlignment="Right" MinHeight="40" Height="auto" Width="100">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="btn" Click="btn_Click" />
+            <StackPanel Grid.Row="1" Visibility="Hidden" x:Name="Menu" >
+                <Button Content="Мой профиль" />
+                <Button Content="Мои сессии" />
+                <Button x:Name="exit" Content="Выход"/>
+            </StackPanel>
+        </Grid>
+        
+    </Grid>
+</Page>
